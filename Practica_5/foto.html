@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctica 5 — Álbum con Modal</title>
+  <link rel="stylesheet" href="styles/foto.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <h1>Mi Álbum de Fotos</h1>
+    <p class="sub">Click en una miniatura para ver en grande</p>
+  </header>
+
+  <!-- Vista del álbum (miniaturas) -->
+  <main id="album-view" aria-label="Galería de miniaturas"></main>
+
+  <!-- Vista modal (arranca oculta) -->
+  <div id="modal-view" aria-modal="true" role="dialog" aria-label="Foto en grande" tabindex="-1"></div>
+
+  <!-- Scripts al final del body -->
+  <script src="js/foto-list.js"></script>
+  <script src="js/foto.js" defer></script>
+</body>
+</html>
